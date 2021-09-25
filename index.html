@@ -21,7 +21,7 @@
   <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
-      <nav class="nav container">
+      <nav class="nav container noSelect">
         <a href="#" class="nav__logo">rebix</a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
@@ -58,7 +58,7 @@
           </ul>
           <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
-        <div class="nav__btns">
+        <div class="nav__btns noSelect">
           <div class="nav__toggle" id="nav-toggle">
             <i class="uil uil-apps"></i>
           </div>
@@ -147,7 +147,7 @@
           <div class="about__data">
             <p class="about__description">
               Web developer, with extensive knowledge and years of experience,
-              working in web technologies and Ui / Ux design, delivering quality
+              working in web technologies and UI / UX design, delivering quality
               work.
             </p>
             <div class="about__info">
@@ -194,12 +194,12 @@
         <div class="skills__container container grid">
           <div>
             <!--==================== SKILL 1 ====================-->
-            <div class="skills__content">
-              <div class="skills__header">
+            <div class="skills__content skills__open">
+              <div class="skills__header noSelect">
                 <i class="uil uil-brackets-curly skills__icon"></i>
 
                 <div>
-                  <h1 class="skills__title">Frontend Developer</h1>
+                  <h1 class="skills__titles">Frontend Developer</h1>
                   <span class="skills__subtitle">More than 1 year</span>
                 </div>
 
@@ -208,7 +208,7 @@
 
               <div class="skills__list grid">
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__titles">
                     <h3 class="skills__name">HTML</h3>
                     <span class="skills__number">40%</span>
                   </div>
@@ -217,7 +217,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__titles">
                     <h3 class="skills__name">CSS</h3>
                     <span class="skills__number">20%</span>
                   </div>
@@ -226,7 +226,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__titles">
                     <h3 class="skills__name">JavaScript</h3>
                     <span class="skills__number">10%</span>
                   </div>
@@ -235,9 +235,9 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__titles">
                     <h3 class="skills__name">React</h3>
-                    <span class="skills__number">60%</span>
+                    <span class="skills__number">0%</span>
                   </div>
                   <div class="skills__bar">
                     <span class="skills__percentage skills__react"></span>
@@ -247,12 +247,12 @@
             </div>
 
             <!--==================== SKILL 2 ====================-->
-            <div class="skills__content">
-              <div class="skills__header">
+            <div class="skills__content skills__close">
+              <div class="skills__header noSelect">
                 <i class="uil uil-apps skills__icon"></i>
 
                 <div>
-                  <h1 class="skills__title">Mobile App Developer</h1>
+                  <h1 class="skills__titles">Mobile App Developer</h1>
                   <span class="skills__subtitle">More than 1 year</span>
                 </div>
 
@@ -261,16 +261,16 @@
 
               <div class="skills__list grid">
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__titles">
                     <h3 class="skills__name">Dart</h3>
-                    <span class="skills__number">70%</span>
+                    <span class="skills__number">80%</span>
                   </div>
                   <div class="skills__bar">
                     <span class="skills__percentage skills__dart"></span>
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__titles">
                     <h3 class="skills__name">Flutter</h3>
                     <span class="skills__number">80%</span>
                   </div>
@@ -279,7 +279,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__titles">
                     <h3 class="skills__name">Firebase</h3>
                     <span class="skills__number">40%</span>
                   </div>
@@ -293,12 +293,12 @@
 
           <div>
             <!--==================== SKILL 3 ====================-->
-            <div class="skills__content">
-              <div class="skills__header">
+            <div class="skills__content skills__close">
+              <div class="skills__header noSelect">
                 <i class="uil uil-swatchbook skills__icon"></i>
 
                 <div>
-                  <h1 class="skills__title">Designer</h1>
+                  <h1 class="skills__titles">Designer</h1>
                   <span class="skills__subtitle">More than 1 year</span>
                 </div>
 
@@ -307,7 +307,7 @@
 
               <div class="skills__list grid">
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__titles">
                     <h3 class="skills__name">Figma</h3>
                     <span class="skills__number">20%</span>
                   </div>
@@ -316,7 +316,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__titles">
                     <h3 class="skills__name">Blender</h3>
                     <span class="skills__number">80%</span>
                   </div>
@@ -331,7 +331,154 @@
       </section>
 
       <!--==================== QUALIFICATION ====================-->
-      <section class="qualification section"></section>
+      <section class="qualification section">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My personal journey</span>
+
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="
+                qualification__button
+                button--flex
+                noSelect
+                qualification__active
+              "
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+
+            <div
+              class="qualification__button button--flex noSelect"
+              data-target="#work"
+            >
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              Work
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Computer Enginner</h3>
+                  <span class="qualification__subtitle">
+                    Poland - University
+                  </span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"> 2019 - 2024 </i>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Web Development</h3>
+                  <span class="qualification__subtitle">
+                    Poland - Institute
+                  </span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"> 2019 - 2024 </i>
+                  </div>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 3 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Mobile App Developer</h3>
+                  <span class="qualification__subtitle">
+                    Poland - In The Forest
+                  </span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"> 2020 - 2022 </i>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
+                </div>
+              </div>
+            </div>
+            <!--==================== QUALIFICATION CONTENT 2 ====================-->
+            <div class="qualification__content" data-content id="work">
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Software Enginner</h3>
+                  <span class="qualification__subtitle"> SpaceX - USA </span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"> 2020 - 2021 </i>
+                  </div>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Frontend Development</h3>
+                  <span class="qualification__subtitle"> Apple Inc - USA </span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"> 2018 - 2020 </i>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 3 ====================-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Mobile App Developer</h3>
+                  <span class="qualification__subtitle"> Google - USA </span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"> 2016 - 2018 </i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!--==================== SERVICES ====================-->
       <section class="services section" id="services"></section>
