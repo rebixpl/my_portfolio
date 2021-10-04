@@ -320,7 +320,7 @@ img {
 }
 
 .home__blob-img {
-  width: 100%;
+  width: 120%;
 }
 
 .home__data {
@@ -510,7 +510,12 @@ img {
 
 .skills__name {
   font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+  cursor: pointer;
+  text-decoration: underline;
+  flex: 3;
+  text-align: start;
 }
 
 .skills__bar,
@@ -524,8 +529,16 @@ img {
 }
 
 .skills__percentage {
-  display: block;
   background-color: var(--first-color);
+}
+
+.skills__number {
+  font-size: var(--small-font-size);
+  text-align: center;
+  align-items: flex-end;
+  align-content: flex-end;
+  align-self: center;
+  flex: 1;
 }
 
 /*========================================*/
