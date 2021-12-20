@@ -650,6 +650,10 @@ img {
   border-radius: 50%;
 }
 
+.uil-github-alt {
+  margin-left: var(--mb-0-5);
+}
+
 .qualification__line {
   display: block;
   width: 1px;
